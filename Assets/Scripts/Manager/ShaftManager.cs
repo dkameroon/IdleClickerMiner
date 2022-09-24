@@ -18,17 +18,14 @@ public class ShaftManager : Singleton<ShaftManager>
     
     private int _currentShaftIndex;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void Start()
     {
         ShaftCost = newShaftCost;
-    }
-
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
-            AddShaft();
-        }
     }
 
     public void AddShaft()

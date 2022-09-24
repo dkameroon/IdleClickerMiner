@@ -63,7 +63,7 @@ public class BaseMiner : MonoBehaviour, IClickable
         
     }
 
-    protected virtual IEnumerator IECollect(float gold, float collecTime)
+    protected virtual IEnumerator IECollect(float gold, float collectTime)
     {
         yield return null;
     }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -12,14 +13,12 @@ public class ShaftUI : MonoBehaviour
     [SerializeField] private GameObject newShaftButton;
     
     private Shaft _shaft;
-    
-    // Start is called before the first frame update
-    void Awake()
+
+    private void Awake()
     {
         _shaft = GetComponent<Shaft>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         depositGold.text = _shaft.ShaftDeposit.CurrentGold.ToString();
