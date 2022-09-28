@@ -13,6 +13,8 @@ public class ShaftManager : Singleton<ShaftManager>
     [SerializeField] private float newShaftCost = 5000;
     [SerializeField] private float newShaftCostMultiplier = 10;
     [SerializeField] private List<Shaft> shafts;
+    
+    public List<Shaft> Shafts => shafts;
 
     public float ShaftCost { get; set; }
     
