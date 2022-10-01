@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4ee30f9-909d-4fd1-8bc2-b5cb006392cf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleClickerMiner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleClickerMiner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Warehouse/Warehouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Warehouse/Warehouse.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +72,7 @@
       <updated>1664039613559</updated>
       <workItem from="1664039621292" duration="2533000" />
       <workItem from="1664392210148" duration="2028000" />
+      <workItem from="1664635119811" duration="1755000" />
     </task>
     <servers />
   </component>
