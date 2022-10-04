@@ -73,6 +73,11 @@ public class BaseMiner : MonoBehaviour, IClickable
         
     }
 
+    protected virtual IEnumerator IEDeposit(float depositTime)
+    {
+        yield return null;
+    }
+
     protected void ChangeGoal()
     {
         IsTimeToCollect = !IsTimeToCollect;
