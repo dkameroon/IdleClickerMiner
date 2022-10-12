@@ -43,6 +43,7 @@ public class ElevatorMiner : BaseMiner
     protected override IEnumerator IECollect(float gold, float collectTime)
     {
         yield return new WaitForSeconds(collectTime);
+
         if (CurrentGold < CollectCapacity && gold <= (CollectCapacity - CurrentGold))
         {
             CurrentGold += gold;
@@ -82,6 +83,7 @@ public class ElevatorMiner : BaseMiner
         
         elevator.ElevatorDeposit.DepositGold(CurrentGold);
         CurrentGold = 0;
+        
         ChangeGoal();
         MoveToNextLocation();
     }

@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4ee30f9-909d-4fd1-8bc2-b5cb006392cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GoldManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GoldManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleClickerMiner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleClickerMiner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Warehouse_Miner.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Warehouse_Miner.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Shaft.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Shaft.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warehouse_Miner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Warehouse_Miner.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Miner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Miner.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Elevator/Elevator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Elevator/Elevator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Extras/Deposit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Extras/Deposit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Miner/BaseMiner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Miner/BaseMiner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Elevator/ElevatorUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Elevator/ElevatorUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Miner/ElevatorMiner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Miner/ElevatorMiner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Miner/ShaftMiner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Miner/ShaftMiner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Miner/WarehouseMiner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Miner/WarehouseMiner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Warehouse/Warehouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Warehouse/Warehouse.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +23,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Elevator/Elevator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Elevator/ElevatorUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -81,7 +83,8 @@
       <workItem from="1664039621292" duration="2533000" />
       <workItem from="1664392210148" duration="2028000" />
       <workItem from="1664635119811" duration="2415000" />
-      <workItem from="1664887668485" duration="3170000" />
+      <workItem from="1664887668485" duration="3630000" />
+      <workItem from="1665587787462" duration="3587000" />
     </task>
     <servers />
   </component>

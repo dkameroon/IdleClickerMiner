@@ -1,15 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
 using UnityEngine;
 
 public class ShaftMiner : BaseMiner
 {
     public Shaft CurrentShaft { get; set; }
 
-    public Vector3 DepositLocation => new Vector3(CurrentShaft.DepositLocation.position.x,transform.position.y);
-    public Vector3 MiningLocation => new Vector3(CurrentShaft.MiningLocation.position.x,transform.position.y);
+    public Vector3 DepositLocation => new Vector3(CurrentShaft.DepositLocation.position.x, transform.position.y);
+    public Vector3 MiningLocation => new Vector3(CurrentShaft.MiningLocation.position.x, transform.position.y);
     
     private int walkAnimation = Animator.StringToHash("Walk");
     private int miningAnimation = Animator.StringToHash("Mining");

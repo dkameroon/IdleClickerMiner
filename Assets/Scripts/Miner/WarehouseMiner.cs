@@ -10,6 +10,18 @@ public class WarehouseMiner : BaseMiner
 
     private int _walkAnimation = Animator.StringToHash("Walk");
 
+    protected override void MoveMiner(Vector3 newPosition)
+    {
+        base.MoveMiner(newPosition);
+        _animator.SetBool(_walkAnimation, true);
+    }
+
+    public override void OnClick()
+    {
+        RotateMiner(-1);
+        MoveMiner(ElevatorDepositLocation);
+    }
+
     protected override void CollectGold()
     {
         if (!ElevatorDeposit.CanCollectGold)
@@ -17,10 +29,10 @@ public class WarehouseMiner : BaseMiner
             RotateMiner(1);
             ChangeGoal();
             MoveMiner(WarehouseLocation);
-            _animator.SetBool(_walkAnimation,false);
             return;
         }
-        _animator.SetBool(_walkAnimation,false);
+        
+        _animator.SetBool(_walkAnimation, false);
         float amountToCollect = ElevatorDeposit.CollectGold(this);
         float collectTime = CollectCapacity / CollectPerSecond;
         StartCoroutine(IECollect(amountToCollect, collectTime));
@@ -29,23 +41,40 @@ public class WarehouseMiner : BaseMiner
     protected override IEnumerator IECollect(float gold, float collectTime)
     {
         yield return new WaitForSeconds(collectTime);
+
         CurrentGold = gold;
         ElevatorDeposit.RemoveGold(gold);
-        _animator.SetBool(_walkAnimation,true);
+        _animator.SetBool(_walkAnimation, true);
+        
         RotateMiner(1);
         ChangeGoal();
         MoveMiner(WarehouseLocation);
     }
 
-    protected override void MoveMiner(Vector3 newPosition)
+    protected override void DepositGold()
     {
-        base.MoveMiner(newPosition);
-        _animator.SetBool(_walkAnimation,true);
+        if (CurrentGold <= 0)
+        {
+            RotateMiner(-1);
+            ChangeGoal();
+            MoveMiner(ElevatorDepositLocation);
+            return;
+        }
+        
+        _animator.SetBool(_walkAnimation, false);
+        float depositTime = CurrentGold / CollectPerSecond;
+        StartCoroutine(IEDeposit(depositTime));
     }
 
-    public override void OnClick()
+    protected override IEnumerator IEDeposit(float depositTime)
     {
+        yield return new WaitForSeconds(depositTime);
+        
+        GoldManager.Instance.AddGold(CurrentGold);
+        CurrentGold = 0;
+        
         RotateMiner(-1);
+        ChangeGoal();
         MoveMiner(ElevatorDepositLocation);
     }
 }
